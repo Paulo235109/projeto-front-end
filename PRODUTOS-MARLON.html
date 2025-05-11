@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DressUp - Página Principal</title>
+  <link rel="stylesheet" href="style_produtos.css">
+</head>
+<body>
+  <main>
+    <section id="home" class="banner">
+      <h1>Bem-vindo à DressUp</h1>
+      <p>Seu estilo, sua identidade.</p>
+    </section>
+    <section id="produtos" class="produtos">
+      <h2>Nossos Produtos</h2>
+      <!-- Filtro de categorias -->
+      <div class="filter">
+        <button data-cat="all" class="active">Todos</button>
+        <button data-cat="camisas">Camisas</button>
+        <button data-cat="calcas">Calças</button>
+        <button data-cat="vestidos">Vestidos</button>
+        <button data-cat="acessorios">Acessórios</button>
+      </div>
+
+      <div class="grid">
+        <!-- Categoria: Camisas -->
+        <article class="produto-card" data-category="camisas">
+          <img src="https://source.unsplash.com/200x200/?shirt,white" alt="Camisa Social Branca">
+          <h3>Camisa Social Branca</h3>
+          <p>Elegância e estilo para ambientes formais.</p>
+          <span class="price">R$ 119,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="camisas">
+          <img src="https://source.unsplash.com/200x200/?shirt,blue" alt="Camisa Social Azul">
+          <h3>Camisa Social Azul</h3>
+          <p>Conforto e sofisticação para o trabalho.</p>
+          <span class="price">R$ 129,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="camisas">
+          <img src="https://source.unsplash.com/200x200/?polo" alt="Camisa Polo Preta">
+          <h3>Camisa Polo Preta</h3>
+          <p>Estilo casual com toque esportivo.</p>
+          <span class="price">R$ 89,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="camisas">
+          <img src="https://source.unsplash.com/200x200/?shirt,xadrez" alt="Camisa Xadrez Vermelha">
+          <h3>Camisa Xadrez Vermelha</h3>
+          <p>Ideal para um visual casual moderno.</p>
+          <span class="price">R$ 99,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="camisas">
+          <img src="https://source.unsplash.com/200x200/?shirt,listrada" alt="Camisa Listrada Cinza">
+          <h3>Camisa Listrada Cinza</h3>
+          <p>Design moderno com listras sutis.</p>
+          <span class="price">R$ 109,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <!-- Categoria: Calças -->
+        <article class="produto-card" data-category="calcas">
+          <img src="https://source.unsplash.com/200x200/?jeans,skinny" alt="Calça Jeans Skinny">
+          <h3>Calça Jeans Skinny</h3>
+          <p>Corte moderno e ajuste perfeito para o dia a dia.</p>
+          <span class="price">R$ 159,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="calcas">
+          <img src="https://source.unsplash.com/200x200/?jeans,reta" alt="Calça Jeans Reta">
+          <h3>Calça Jeans Reta</h3>
+          <p>Versátil e confortável para qualquer ocasião.</p>
+          <span class="price">R$ 149,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="calcas">
+          <img src="https://source.unsplash.com/200x200/?trousers,tailored" alt="Calça de Alfaiataria Preta">
+          <h3>Calça de Alfaiataria Preta</h3>
+          <p>Perfeita para ambientes formais com acabamento sofisticado.</p>
+          <span class="price">R$ 199,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="calcas">
+          <img src="https://source.unsplash.com/200x200/?cargo,pants" alt="Calça Cargo Verde">
+          <h3>Calça Cargo Verde</h3>
+          <p>Funcional e estilosa, com bolsos utilitários.</p>
+          <span class="price">R$ 139,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="calcas">
+          <img src="https://source.unsplash.com/200x200/?pants,sarja" alt="Calça de Sarja Bege">
+          <h3>Calça de Sarja Bege</h3>
+          <p>Praticidade e conforto para o cotidiano.</p>
+          <span class="price">R$ 129,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <!-- Categoria: Acessórios -->
+        <article class="produto-card" data-category="acessorios">
+          <img src="https://source.unsplash.com/200x200/?belt,leather" alt="Cinto de Couro Marrom">
+          <h3>Cinto de Couro Marrom</h3>
+          <p>Acabamento premium em couro legítimo.</p>
+          <span class="price">R$ 59,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="acessorios">
+          <img src="https://source.unsplash.com/200x200/?cap,black" alt="Boné Preto Clássico">
+          <h3>Boné Preto Clássico</h3>
+          <p>Design atemporal e versátil para qualquer look.</p>
+          <span class="price">R$ 49,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="acessorios">
+          <img src="https://source.unsplash.com/200x200/?sunglasses,retro" alt="Óculos de Sol Retro">
+          <h3>Óculos de Sol Retro</h3>
+          <p>Proteção e estilo com armação clássica.</p>
+          <span class="price">R$ 89,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="acessorios">
+          <img src="https://source.unsplash.com/200x200/?watch,minimalist" alt="Relógio Minimalista">
+          <h3>Relógio Minimalista</h3>
+          <p>Design clean que complementa qualquer visual.</p>
+          <span class="price">R$ 199,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="acessorios">
+          <img src="https://source.unsplash.com/200x200/?bracelet,leather" alt="Pulseira de Couro">
+          <h3>Pulseira de Couro</h3>
+          <p>Detalhe sofisticado para valorizar seu pulso.</p>
+          <span class="price">R$ 39,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <!-- Categoria: Vestidos -->
+        <article class="produto-card" data-category="vestidos">
+          <img src="https://source.unsplash.com/200x200/?dress,floral" alt="Vestido Floral Leve">
+          <h3>Vestido Floral Leve</h3>
+          <p>Estampa delicada e fluida, perfeita para o verão.</p>
+          <span class="price">R$ 139,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="vestidos">
+          <img src="https://source.unsplash.com/200x200/?dress,black" alt="Vestido Preto Elegante">
+          <h3>Vestido Preto Elegante</h3>
+          <p>Clássico e sofisticado para eventos especiais.</p>
+          <span class="price">R$ 199,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="vestidos">
+          <img src="https://source.unsplash.com/200x200/?dress,blue" alt="Vestido Midi Azul">
+          <h3>Vestido Midi Azul</h3>
+          <p>Comprimento ideal para um visual moderno e delicado.</p>
+          <span class="price">R$ 169,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="vestidos">
+          <img src="https://source.unsplash.com/200x200/?dress,red" alt="Vestido Longo Vermelho">
+          <h3>Vestido Longo Vermelho</h3>
+          <p>Impactante e vibrante para ocasiões marcantes.</p>
+          <span class="price">R$ 229,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+        <article class="produto-card" data-category="vestidos">
+          <img src="https://source.unsplash.com/200x200/?dress,pattern" alt="Vestido Curto Estampado">
+          <h3>Vestido Curto Estampado</h3>
+          <p>Modelo divertido com estampa única para dias casuais.</p>
+          <span class="price">R$ 149,90</span>
+          <a href="#" class="btn">Saiba Mais</a>
+        </article>
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-secoes">
+      <section id="sobre" class="sobre">
+        <h2>Sobre a DressUp</h2>
+        <p>Conheça nossa missão, valores e equipe.</p>
+      </section>
+      
+      <section id="contato" class="contato">
+        <h2>Fale Conosco</h2>
+        <p>Email, telefone e redes sociais.</p>
+      </section>
+    </div>
+    
+    <p class="copy">&copy; 2025 DressUp. Todos os direitos reservados.</p>
+  </footer>
+  
+  <style>
+
+
+
+
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+/* Garante que html e body ocupem 100% da altura da viewport */
+html, body {
+  height: 100%;
+}
+
+/* Define o body como container flex vertical */
+body { 
+  font-family: Arial, sans-serif; 
+  color: var(--color1); 
+  background: var(--color2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* A área principal deve expandir para empurrar o footer para baixo */
+main {
+  flex: 1;
+}
+
+section.banner { 
+  text-align: center; 
+  padding: 4rem 1rem; 
+  background: var(--color3); 
+  color: var(--color1); 
+}
+
+/* Filtro de categorias */
+.filter { 
+  display: flex; 
+  gap: 0.5rem; 
+  justify-content: center; 
+  padding: 1rem; 
+  background: var(--color2); 
+}
+
+.filter button {
+  background: var(--color4);
+  color: var(--color2);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filter button.active,
+.filter button:hover {
+  background: var(--color5);
+}
+
+.btn { 
+  background: var(--color4); 
+  color: var(--color2); 
+  padding: 0.75rem 1.5rem; 
+  border-radius: 0.5rem; 
+  text-decoration: none; 
+  transition: background 0.3s; 
+}
+
+.btn:hover { 
+  background: var(--color5); 
+}
+
+.produtos { 
+  padding: 2rem 1rem; 
+}
+
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 1.5rem; 
+}
+
+.produto-card {
+    background: var(--color2);
+    border: 1px solid var(--color3);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    
+    /* Adicionado: define o cartão como um container flex em coluna */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Garante que os elementos internos sejam espaçados corretamente */
+  .produto-card img {
+    /* Mantém o comportamento de imagem */
+    width: 100%;
+    height: auto;
+  }
+  
+  .produto-card h3 {
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .produto-card p {
+    padding: 0 1rem;
+    /* Se preferir limitar a altura e evitar que a descrição ultrapasse, pode adicionar: */
+    /* max-height: 4.5rem; overflow: hidden; */
+  }
+  
+  .produto-card .price {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  /* Ajusta o botão para ser empurrado para o final do cartão */
+  .produto-card .btn {
+    background: var(--color4);
+    color: var(--color2);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+    
+    /* Com a regra abaixo, o botão fica sempre na parte de baixo do cartão */
+    margin-top: auto;
+  }
+  
+  .produto-card .btn:hover {
+    background: var(--color5);
+  }
+  
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--color1);
+    color: var(--color2);
+    font-size: 0.9rem;
+  }
+  
+  footer section {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Reduzindo o tamanho dos títulos e textos para um design mais minimalista */
+  footer section h2 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  footer section p {
+    font-size: 0.85rem;
+    margin: 0;
+  }
+  
+</style>
+
+
+
+
+  <script>
+    // Filtrar produtos por categoria
+    const buttons = document.querySelectorAll('.filter button');
+    const cards = document.querySelectorAll('.produto-card');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // ativa botão
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.cat;
+        cards.forEach(card => {
+          card.style.display = (cat === 'all' || card.dataset.category === cat) ? 'flex' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

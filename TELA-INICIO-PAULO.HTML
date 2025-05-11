@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRESS UP</title>
+<link rel="stylesheet" href="PROJETO.CSS">
+
+</head>
+<body>
+     
+
+
+
+
+
+
+
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+
+
+  .banner {
+    background-image:url(foto-fundo-tela1.jpg); /* Caminho da imagem */
+    background-size: cover;      /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    height: 300px;               /* Altura do banner (pode ajustar) */
+    width: 100%;                 /* Ocupa toda a largura */
+    color: white;                /* Cor do texto, se tiver */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+ 
+  .banner h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0); /* Melhora legibilidade do texto */
+  }
+
+
+
+
+  .navbar {
+    background-color: #000000;
+    padding: 15px 30px;
+    border-bottom: 0.5px solid var(--color3);
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #ffffff; /*cor do txt do link "<a>"*/
+    font-weight: bold; /*fonte*/
+    transition: color 0.3s; /*escurece ao passar o mouse*/
+  } 
+  
+  .nav-list li a:hover {
+    color:var(--color1); /* Cor ao passar o mouse */
+  }
+
+  h1{text-align: center;
+  }
+  :root {
+    --color1: #aa9f65;
+    --color2: #123458;
+    --color3: #35b133;
+    --color4: #dd1111;
+    --color5: #ffffff;
+    --color6: #000000;
+    --color7: #4b4b4be1;
+  }
+
+
+
+
+  /* test */
+
+
+  .container {
+    position: relative;   /* conjunto de cod q faz a imagem ocupar toda tela*/
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .foto-fundo-2{
+    width: 100%; /* Ajuste conforme necessário */
+    height: auto;
+  }
+  
+  .caixa-cadastro {
+    position: absolute;
+    top: 50%; /* Ajusta a posição da caixa verticalmente */
+    left: 50%; /* Ajusta a posição da caixa horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza a caixa */
+    background-color:var(--color1); /* Fundo semitransparente */
+    color:#000000;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 15px 30px;
+    background-color:#000000;
+    color:#ffffff;
+    border: none;
+    cursor: pointer;}
+  
+  a{text-decoration: none;
+  color:#ffffff;
+transition: color 0.3s;
+font-weight: bold;}
+  
+  a:hover{color:var(--color7);}
+
+</style>
+
+
+
+
+
+
+
+
+
+       <div class="banner">
+        
+        <h1>DRESS UP</h1>
+      <br> 
+       </div>
+     
+
+    <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="PRODUTOS-MARLON.html">Nossos Produtos</a></li>
+      <li><a href="TELA-LOGIN-PAULO.html">Login</a> </li>
+
+</ul></nav>
+
+
+<!-- test -->
+
+
+<div class="container">
+  <img src="foto-fundo-2.jpg" alt="Imagem de fundo" class="foto-fundo-2">
+  <div class="caixa-cadastro">
+    <p>Faça Parte do Nosso Time! <br>Ganhe 10% de Desconto na Primeira Compra! </p>
+    <button><a href="CADASTRO-RICARDO.html">CADASTRE-SE AGORA.</a></button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+    
